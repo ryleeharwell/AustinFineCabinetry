@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Austin Fine Cabinetry</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="container">
+    <a href="index.html" class="brand">Austin Fine Cabinetry</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">&#9776;</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" style="padding-bottom:20px;">
+  <div class="container">
+    <p class="eyebrow">Contact</p>
+    <h1>Let's talk about your project</h1>
+    <p class="lede">Tell us a bit about what you have in mind and we'll follow up to schedule a time to take a look at your space.</p>
+  </div>
+</header>
+
+<section style="padding-top:0;">
+  <div class="container">
+    <div class="contact-info">
+      <div>
+        <h3>Email</h3>
+        <p>hello@austinfinecabinetry.com</p>
+      </div>
+      <div>
+        <h3>Phone</h3>
+        <p>(512) 000-0000</p>
+      </div>
+      <div>
+        <h3>Service area</h3>
+        <p>Austin, TX &amp; surrounding areas</p>
+      </div>
+    </div>
+
+    <!--
+      This form needs a submission handler since GitHub Pages can't run backend code.
+      Recommended: sign up free at https://formspree.io, then replace YOUR_FORM_ID below
+      with the endpoint they give you. No other changes needed.
+    -->
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+        <label for="phone">Phone (optional)</label>
+        <input type="tel" id="phone" name="phone">
+      </div>
+      <div>
+        <label for="message">Tell us about your project</label>
+        <textarea id="message" name="message" required placeholder="Room type, rough timeline, budget range, anything helpful..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send message</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div>
+      <h3>Austin Fine Cabinetry</h3>
+      <p style="font-size:0.85rem;">Custom cabinetry built in Austin, Texas.</p>
+    </div>
+    <div>
+      <h3>Explore</h3>
+      <p><a href="gallery.html">Gallery</a></p>
+      <p><a href="services.html">Services</a></p>
+      <p><a href="about.html">About</a></p>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <p><a href="contact.html">Get a quote</a></p>
+    </div>
+  </div>
+  <p class="footer-bottom">&copy; <span id="year"></span> Austin Fine Cabinetry. All rights reserved.</p>
+</footer>
+
+<script>
+document.getElementById('navToggle').addEventListener('click', function() {
+  document.getElementById('navLinks').classList.toggle('open');
+});
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
