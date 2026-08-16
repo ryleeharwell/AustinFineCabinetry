@@ -143,10 +143,15 @@ p { color: var(--text-muted); }
    Used as hero art and section dividers throughout the site. */
 .split-frame {
   display: grid;
-  grid-template-columns: 1.3fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
   border-radius: var(--radius);
   overflow: hidden;
   min-height: 320px;
+  border: none;
+}
+.split-frame .panel-light, .split-frame .panel-dark {
+  border-radius: var(--radius);
   border: 1px solid var(--border);
 }
 .split-frame .panel-light {
