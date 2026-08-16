@@ -150,12 +150,18 @@ p { color: var(--text-muted); }
   border: 1px solid var(--border);
 }
 .split-frame .panel-light {
-  background: var(--white) center/cover no-repeat;
+  background-color: var(--white);
   background-image: var(--img-light, none);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .split-frame .panel-dark {
-  background: var(--charcoal) center/cover no-repeat;
+  background-color: var(--charcoal);
   background-image: var(--img-dark, none);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .split-frame .panel-light, .split-frame .panel-dark {
   display: flex; align-items: center; justify-content: center;
